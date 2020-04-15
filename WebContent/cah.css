@@ -279,6 +279,10 @@ span.debug, span.admin {
   color: blue;
 }
 
+span.user-message {
+  color: purple;
+}
+
 .card {
   position: relative;
   width: 200px;

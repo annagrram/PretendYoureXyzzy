@@ -137,6 +137,7 @@ cah.longpoll.showChat_ = function(data, wasFiltered) {
       if (data[cah.$.LongPollResponse.EMOTE]) {
         cah.log.status_with_game(game, "* " + who + " " + message, clazz, false, title);
       } else {
+        clazz = clazz || "user-message"
         cah.log.status_with_game(game, "<" + who + "> " + message, clazz, false, title);
       }
     }
