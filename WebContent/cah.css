@@ -275,12 +275,12 @@ span.error {
   color: red;
 }
 
-span.debug, span.admin {
-  color: blue;
+span.user-message {
+  color: #7851A9;
 }
 
-span.user-message {
-  color: purple;
+span.debug, span.admin {
+  color: blue;
 }
 
 .card {

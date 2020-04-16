@@ -100,7 +100,7 @@ cah.longpoll.EventHandlers[cah.$.LongPollEvent.FILTERED_CHAT] = function(data) {
 };
 
 cah.longpoll.showChat_ = function(data, wasFiltered) {
-  var clazz = undefined;
+  var clazz = '';
   var idcode = data[cah.$.LongPollResponse.ID_CODE];
   var title = cah.log.getTitleForIdCode(idcode);
   var sigil = data[cah.$.LongPollResponse.SIGIL];
@@ -137,8 +137,7 @@ cah.longpoll.showChat_ = function(data, wasFiltered) {
       if (data[cah.$.LongPollResponse.EMOTE]) {
         cah.log.status_with_game(game, "* " + who + " " + message, clazz, false, title);
       } else {
-        clazz = clazz || "user-message"
-        cah.log.status_with_game(game, "<" + who + "> " + message, clazz, false, title);
+        cah.log.status_with_game(game, "<" + who + "> " + message, clazz + ' user-message', false, title);
       }
     }
   }

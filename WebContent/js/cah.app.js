@@ -166,7 +166,7 @@ function chatsubmit_click(game_id, parent_element) {
         if (cah.sigil == cah.$.Sigil.ADMIN) {
           clazz = 'admin';
         }
-        cah.log.status_with_game(game_id, "<" + cah.sigil + cah.nickname + "> " + text, clazz,
+        cah.log.status_with_game(game_id, "<" + cah.sigil + cah.nickname + "> " + text, clazz + ' user-message',
             false, cah.log.getTitleForIdCode(cah.idcode));
         break;
       case 'me':
